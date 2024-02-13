@@ -1,39 +1,49 @@
 package com.igawa;
 
 public class Anime {
-//    field
-    private String name1;
-    private String name2;
-    private String name3;
+    //    field
+//    タイトル
+    private String title;
+    //    主人公の名前
+    private String mainCharacterName;
+    //    サブキャラの名前
+    private String subCharacterName;
 
-//    constructor コンストラクタ
-    public Anime(String name1,String name2,String name3){
-        this.name1 = name1;
-        this.name2 = name2;
-        this.name3 = name3;
+    //    constructor コンストラクタ
+    public Anime(String title, String mainCharacterName, String subCharacterName) {
+        this.title = title;
+        this.mainCharacterName = mainCharacterName;
+        this.subCharacterName = subCharacterName;
     }
-// getter
-//    基本的にpublic
+
+    public Anime() {
+
+    }
+
+    // getter
     public String getName1() {
-        return name1;
-    }
-    public String getName2() {
-        return name2;
-    }
-    public String getName3(){
-        return name3;
-    }
-//    引数　input
-    public void setName1(String newname1)
-    {
-        this.name1 = newname1;
-    }
-    public void setName2(String newname2)
-    {
-        this.name2 = newname2;
+
+        return title;
     }
 
-    public void setName3(String name3) {
-        this.name3 = name3;
+    public String getName2() {
+        return mainCharacterName;
+    }
+
+    public String getName3() {
+        return subCharacterName;
+    }
+
+    //    引数input
+    public void setName1(String title) {
+        this.title = title;
+    }
+
+    public void setName2(String mainCharacterName) {
+        this.mainCharacterName = mainCharacterName;
+    }
+
+    public void setName3(String subCharacterName) {
+        this.subCharacterName = subCharacterName;
     }
 }
