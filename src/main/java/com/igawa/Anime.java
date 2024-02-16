@@ -21,29 +21,29 @@ public class Anime {
     }
 
     // getter
-    public String getName1() {
+    public String getTitle() {
 
         return title;
     }
 
-    public String getName2() {
+    public String getMainCharacterName() {
         return mainCharacterName;
     }
 
-    public String getName3() {
+    public String getSubCharacterName() {
         return subCharacterName;
     }
 
     //    引数input
-    public void setName1(String title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
-    public void setName2(String mainCharacterName) {
+    public void setMainCharacterName(String mainCharacterName) {
         this.mainCharacterName = mainCharacterName;
     }
 
-    public void setName3(String subCharacterName) {
+    public void setSubCharacterName(String subCharacterName) {
         this.subCharacterName = subCharacterName;
     }
 }
